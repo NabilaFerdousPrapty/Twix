@@ -7,11 +7,60 @@ Twix with Django
 
 {% block content %}
 <div class="grid grid-cols-3 gap-4">
-    <div class="bg-gray-200 p-4">1</div>
-    <div class="bg-gray-200 p-4">2</div>
-    <div class="bg-gray-200 p-4">3</div>
-    <div class="bg-gray-200 p-4">4</div>
-    <div class="bg-gray-200 p-4">5</div>
-    <div class="bg-gray-200 p-4">6</div>
+    <div class="col-span-2">
+        <h1 class="text-2xl font-bold">Twix with Django</h1>
+        <p class="text-lg">Welcome to Twix with Django. This is a simple Django project that uses Tailwind CSS.</p>
+
+        <h2 class="text-xl font-bold mt-4">Features</h2>
+        <ul class="list-disc ml-4">
+            <li>Simple Django project</li>
+            <li>Uses Tailwind CSS</li>
+            <li>Responsive design</li>
+        </ul>
+
+        <h2 class="text-xl font-bold mt-4">Requirements</h2>
+        <ul class="list-disc ml-4">
+            <li>Python 3.6+</li>
+            <li>Django 3.0+</li>
+            <li>Tailwind CSS</li>
+        </ul>
+
+        <h2 class="text-xl font-bold mt-4">Installation</h2>
+        <p class="text-lg">To install this project, follow these steps:</p>
+        <pre class="bg-gray-200 p-4 rounded-md mt-2">
+
+# Clone the repository
+git clone
+
+# Change directory
+cd twix-with-django
+
+# Install dependencies
+pip install -r requirements.txt
+
+
+# Run the server
+python manage.py runserver
+        </pre>
+    </div>
+    <div>
+        <img src="{% static 'images/twix.jpg' %}" alt="Twix" class="rounded-lg">
+    </div>
+    <div>
+        <img src="{% static 'images/django.png' %}" alt="Django" class="rounded-lg">
+    </div>
+    <div>
+        <img src="{% static 'images/tailwindcss.png' %}" alt="Tailwind CSS" class="rounded-lg">
+
+        <h2 class="text-xl font-bold mt-4">About</h2>
+        <p class="text-lg">This project is created by <a href="https://www.techiediaries.com">Techiediaries</a>.</p>
+
+        <h2 class="text-xl font-bold mt-4">License</h2>
+        <p class="text-lg">This project is open-source and available under the MIT license.</p>
+    </div>
+
+
+
+
 </div>
 {% endblock %}
